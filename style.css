@@ -1,0 +1,193 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Контейнер для всего приложения */
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.verified {
+    color: #4caf50;
+    font-size: 16px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Стиль для всех разделов */
+section {
+    margin-bottom: 20px;
+}
+
+/* Профиль */
+.profile-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.energy-bar {
+    height: 8px;
+    background-color: #444;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.current-energy {
+    height: 8px;
+    background-color: #76c7c0;
+    border-radius: 5px;
+}
+
+.btn-recover {
+    background-color: #4caf50;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-recover:hover {
+    background-color: #45a049;
+}
+
+/* Информация */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 16px;
+}
+
+/* Навигация */
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+    padding: 12px;
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #3a3a3a;
+}
+
+.nav-btn.active {
+    background-color: #4caf50;
+}
+
+/* Секционные стили */
+#mining-section {
+    display: block;
+}
+
+#improvements-section, #tasks-section {
+    display: none;
+}
+
+/* Стили для переключателя */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #bbb;
+}

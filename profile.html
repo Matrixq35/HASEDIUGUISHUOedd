@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memhash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>#Memhash <span class="verified">✔</span></h1>
+            <div class="menu-icon">⋮</div>
+        </header>
+
+        <main class="content">
+            <!-- Профиль -->
+            <section class="profile-section">
+                <h2>Мой Профиль</h2>
+                <div class="balance">
+                    <div>Баланс</div>
+                    <div class="value">7,980.86</div>
+                </div>
+                <div class="energy">
+                    <div>Энергия</div>
+                    <div class="energy-bar">
+                        <div class="current-energy" style="width: 60%;"></div>
+                    </div>
+                    <button class="btn-recover">Восстановить</button>
+                </div>
+            </section>
+
+            <!-- Информация -->
+            <section class="info-section">
+                <h2>Информация</h2>
+                <div class="info-grid">
+                    <div>Блок</div><div>#310086</div>
+                    <div>Сложность</div><div>8.8K</div>
+                    <div>Награда</div><div>738</div>
+                    <div>В сети</div><div>13.2K</div>
+                </div>
+            </section>
+
+            <!-- Майнинг (по умолчанию видимый) -->
+            <section id="mining-section" class="mining-section">
+                <h2>Майнинг</h2>
+                <div class="info-grid">
+                    <div>Статус</div><div class="status waiting">Ожидание</div>
+                    <div>Shares</div><div>2.4K</div>
+                    <div>Хэш</div><div>53.7B</div>
+                    <div>Доход</div><div>472.2</div>
+                </div>
+                <button class="btn-start-mining">→ Начать майнинг</button>
+            </section>
+
+            <!-- Улучшения (скрыто по умолчанию) -->
+            <section id="improvements-section" class="improvements-section" style="display: none;">
+                <h2>Улучшения</h2>
+                <div class="improvement-item">
+                    <div>Макс. энергия</div>
+                    <div>77,500</div>
+                </div>
+                <div class="energy">
+                    <div>Энергия</div>
+                    <div class="energy-bar">
+                        <div class="current-energy" style="width: 60%;"></div>
+                    </div>
+                    <button class="btn-recover">Увеличить макс. энергию за 1800 ✨</button>
+                </div>
+                <div class="setting">
+                    <div>Турбо-режим</div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="info">
+                    Ваша мощность майнинга может увеличиться в ~32 раза. Внимание: Устройство может нагреваться при использовании турбо-режима.
+                </div>
+            </section>
+
+            <!-- Задания (скрыто по умолчанию) -->
+            <section id="tasks-section" class="tasks-section" style="display: none;">
+                <h2>Задания</h2>
+                <div class="task-item">
+                    <div>Вступить в канал</div>
+                    <button class="task-btn">Выполнено</button>
+                </div>
+                <div class="task-item">
+                    <div>Пригласить друзей</div>
+                    <div class="task-points">+1500</div>
+                </div>
+                <div class="task-item">
+                    <div>Подписаться на X</div>
+                    <button class="task-btn">Выполнено</button>
+                </div>
+                <h3>Ежедневные задания</h3>
+                <div class="task-item">
+                    <div>Восстановление энергии</div>
+                    <div class="task-progress">100%</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Навигация -->
+        <nav class="bottom-nav">
+            <button id="mining-btn" class="nav-btn active">МАЙНИНГ</button>
+            <button id="improvements-btn" class="nav-btn">УЛУЧШЕНИЕ</button>
+            <button id="tasks-btn" class="nav-btn">ЗАДАНИЯ</button>
+            <button class="nav-btn">ТОП</button>
+            <button class="nav-btn">ТОКЕН</button>
+        </nav>
+
+        <!-- Footer -->
+        <footer>
+            <p>@memhash_bot</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
